@@ -7,6 +7,11 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
 .content {
     margin: 0 20em;
 }
@@ -57,6 +62,10 @@ ul {
     min-width: fit-content;
 }
 
+.section-one-left h1 {
+    margin-bottom: -5px;
+}
+
 .section-one-right {
     height: 40vh;
     display: flex;
@@ -78,6 +87,7 @@ ul {
     border: none;
     border-radius: 5px;
     color: rgb(245, 245, 245);
+    font-size: 12px;
 }
 
 .section-two {
@@ -93,18 +103,21 @@ ul {
 .card-container {
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 15px;
 }
 
 .card {
     display: block;
     text-align: center;
+    max-width: 200px;
 }
 
 .card-image {
     height: 200px;
-    width: auto;
+    width: 200px;
     border-radius: 10px;
 }
 
