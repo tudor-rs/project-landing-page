@@ -1,6 +1,9 @@
 body {
-    margin: 0 auto;
+    margin: 0 0;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
 }
 
 ul {
@@ -12,52 +15,62 @@ ul {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7em;
+    flex-wrap: wrap;
+    padding: 0 5%;
     background-color: rgb(19, 19, 19);
 }
 
 .logo {
     font-family: sans-serif;
-    font-weight: 1000;
+    font-weight: 700;
     font-size: 2em;
-    color: rgb(165, 0, 0);
+    color: rgb(207, 0, 0);
 }
 
 .header-links {
     display: flex;
-    flex: 0 0 auto;
-    justify-content: flex-end;
+    flex: 1;
+    justify-content: end;
     gap: 2em;
     color: rgb(223, 223, 223);
+    border: 2px solid red;
 }
 
 .section-one {
+    height: 40vh;
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    gap: 10em;
-    padding: 0 7em;
-    background-image: url("/images/image-section-one.jpg");
-    height: 400px;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    background-color: rgb(34, 34, 34);
 }
 
 .section-one-left {
+    height: 40vh;
     color: white;
     display: flex;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    min-width: fit-content;
+    border: 2px solid red;
 }
 
 .section-one-right {
+    height: 40vh;
     display: flex;
-    justify-content: end;
-    width: auto;
-    height: 300px;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid red;
 }
 
-#image-section-one-right {
-    border-radius: 5%;
+#image-section-one {
+    height: 50%;
+    width: auto;
+    border: 2px solid red;
 }
 
 .sign-up-button {
@@ -66,23 +79,35 @@ ul {
     background-color: rgb(165, 0, 0);
     border: none;
     border-radius: 5px;
-    color: white;    
+    color: white;
 }
 
 .section-two {
-    margin-top: 1em;
     display: flex;
     flex: 1;
-    flex-flow: column nowrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    max-width: 100%;
+    background-color: rgb(80, 80, 80);
 }
 
 .card-container {
     display: flex;
     flex: 1;
-    gap: 5em;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 50px;
+}
+
+.card {
+    display: block;
+    text-align: center;
+}
+
+.card-image {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
 }
