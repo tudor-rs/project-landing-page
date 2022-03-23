@@ -13,7 +13,7 @@ a {
 }
 
 .content {
-    margin: 0 20em;
+    margin: 0;
 }
 
 .header {
@@ -23,7 +23,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     padding: 0 2em;
-    background-color: rgb(104, 0, 0);
+    background-color: rgb(31, 31, 31);
 }
 
 .logo {
@@ -31,30 +31,35 @@ a {
     font-weight: 100;
     font-size: 26px;
     color: rgb(245, 245, 245);
+    min-width: fit-content;
 }
 
 .header-links {
     display: flex;
     flex: 1;
     justify-content: end;
+    flex-wrap: wrap;
     gap: 2em;
+    min-width: fit-content;
     color: rgb(245, 245, 245);
 }
 
 .section-one {
-    min-height: 40vh;
+    min-height: 400px;
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 2em;
-    background-color: rgb(235, 235, 235);
+    padding: 0 20em;
+    background-image: url("images/section-one-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-one-left {
-    height: 40vh;
-    color: rgb(31, 31, 31);
+    height: 400px;
+    color: rgb(245, 245, 245);
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -67,23 +72,13 @@ a {
 }
 
 .section-one-right {
-    height: 40vh;
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-#image-section-one {
-    height: 50%;
-    width: auto;
-    border-radius: 10px;
 }
 
 .sign-up-button {
     width: fit-content;
     padding: 5px 20px;
-    background-color: rgb(104, 0, 0);
+    background-color: rgb(31, 31, 31);
     border: none;
     border-radius: 5px;
     color: rgb(245, 245, 245);
@@ -161,7 +156,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     padding: 3em;
-    background-color: rgb(104, 0, 0);
+    background-color: rgb(31, 31, 31);
     border-radius: 1em;
 }
 
@@ -194,7 +189,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(104, 0, 0);
+    background-color: rgb(31, 31, 31);
 }
 
 .footer p {
